@@ -83,7 +83,8 @@ body {
   cursor: pointer;
 }
 
-.util i, .user i {
+.util i,
+.user i {
   font-size: 18px;
   margin: 0 16px;
   border: 1px solid crimson;
@@ -105,19 +106,27 @@ body {
 .food-items {
 }
 
-#biryani, #chicken, #ChinaFood, #vegetable, #JapanesseFood, #KoreanFood {
+#biryani,
+#chicken,
+#ChinaFood,
+#vegetable,
+#JapanesseFood,
+#KoreanFood {
   margin-top: 40px;
 }
 
-#ChinaFood #item-card, #vegetable #item-card {
+#ChinaFood #item-card,
+#vegetable #item-card {
   background: rgb(218, 253, 18);
 }
 
-#JapanesseFood #item-card, #KoreanFood #item-card {
+#JapanesseFood #item-card,
+#KoreanFood #item-card {
   background: rgb(218, 243, 243);
 }
 
-#category-name,.item-menu {
+#category-name,
+.item-menu {
   margin: 10px;
   font-size: 30px;
   color: coral;
@@ -135,10 +144,58 @@ body {
   transition: 0.5s all ease-in-out;
 }
 
+#card-top {
+  display: flex;
+  margin: 5px 0;
+  justify-content: space-between;
+}
+
 #item-card img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  margin: auto;
+  display: block;
+  margin-bottom: 15px;
+  transition: 0.5s LL ease-in-out;
+}
+
+#rating {
+  font-size: 14px;
+  padding: 7px;
+  color: goldenrod;
+  background: black;
+  border-radius: 14px;
+}
+
+.fa-heart-o {
+  padding: 6px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.toggle-heart {
+  background: orange;
+  color: white;
+}
+
+#item-card:hover img {
+  transform: scale(1.2);
+}
+
+#item-name {
+  margin: 5px 0;
+  font-weight: 600;
+  color: darkslategrey;
+  font-size: 18px;
+}
+
+#item-price {
+  margin: 0;
+  color: rgb(2, 27, 27);
+  font-weight: 500;
+  font-size: 18px;
 }
 
 #cart {

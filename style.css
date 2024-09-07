@@ -105,6 +105,42 @@ body {
 .food-items {
 }
 
+#biryani, #chicken, #ChinaFood, #vegetable, #JapanesseFood, #KoreanFood {
+  margin-top: 40px;
+}
+
+#ChinaFood #item-card, #vegetable #item-card {
+  background: rgb(218, 253, 18);
+}
+
+#JapanesseFood #item-card, #KoreanFood #item-card {
+  background: rgb(218, 243, 243);
+}
+
+#category-name,.item-menu {
+  margin: 10px;
+  font-size: 30px;
+  color: coral;
+}
+
+#item-card {
+  width: 180px;
+  height: 220px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  background: rgb(253, 221, 226);
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+
+#item-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
 #cart {
   background: lavender;
 }

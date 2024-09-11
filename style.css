@@ -94,7 +94,7 @@ body {
   cursor: pointer;
 }
 
-.util i:active {
+i:active, .user i:active {
   color: white;
   background: crimson;
 }
@@ -104,7 +104,7 @@ body {
 }
 
 .food-items {
-  display: none;
+  
 }
 
 #biryani,
@@ -262,8 +262,12 @@ body {
   color: rgb(94, 43, 43);
 }
 
-.cart-toggle {
+#category-list {
+  
+}
 
+.cart-toggle {
+  display: none;
 }
 
 #cart-page {
@@ -271,7 +275,7 @@ body {
   margin: 40px 10px;
   margin-right: 50px;
   padding: 20px 30px;
-  padding-bottom:30;
+  padding-bottom: 30;
   position: relative;
 }
 
@@ -305,7 +309,7 @@ body {
   border: none;
   font-size: 16px;
   background: none;
-  background: lightcoral ;
+  background: lightcoral;
   color: white;
   border-radius: 3px;
   cursor: pointer;
@@ -317,4 +321,47 @@ body {
   width: 75px;
   height: 75px;
   border-radius: 50px;
+}
+
+#chekcout {
+  text-align: center;
+  margin: 40px auto;
+  border-radius: 5px;
+  background: red;
+  padding: 10px 20px;
+}
+
+#chekcout p {
+  margin: 15px;
+  float: left;
+}
+
+#total-price,
+#total-item {
+  font-size: 25px;
+  color: indianred;
+}
+
+.cart-btn {
+  outline: none;
+  border: none;
+  background: crimson;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 18px;
+  bottom: 30px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.cart-btn:active {
+  color: crimson;
+  background: none;
+  border: 1px solid crimson;
+}
+
+#delievery {
+  font-size: 20px;
+  color: limegreen;
 }

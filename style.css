@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Poppins;
+  font-family: Poppins, 'Montserrat';
 }
 html {
   height: 100%;
@@ -13,7 +15,8 @@ body {
 .container {
   display: grid;
   grid-template-columns: 250px 1fr 300px;
-  height: 100%;
+  height: 100vh;
+  min-height: -webkit-fill-available;
   overflow: hidden;
 }
 
@@ -38,6 +41,8 @@ body {
   margin: 12px 0;
   color: rgb(128, 129, 129);
   font-weight: 400;
+  font-size: 16px;
+  font-family: 'Montserrat', Poppins;
 }
 
 .menu-item a:hover {
@@ -94,7 +99,7 @@ body {
   cursor: pointer;
 }
 
-i:active, .user i:active {
+.util i:active {
   color: white;
   background: crimson;
 }
@@ -103,8 +108,20 @@ i:active, .user i:active {
   font-size: 18px;
 }
 
+#header select{
+  width: 150px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background: none;
+  color: rosybrown;
+  padding: 0 5px;
+}
+
 .food-items {
-  
+  background: whitesmoke;
+    overflow: auto;
+    height: calc(100vh - 86px);
 }
 
 #biryani,

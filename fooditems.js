@@ -325,7 +325,7 @@ const foodItem = [
   },
   {
     id: 37,
-    name: "Navratan ",
+    name: "Navratan",
     category: "Vegetable",
     rating: 4.3,
     price: 18,
